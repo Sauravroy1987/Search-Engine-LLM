@@ -11,15 +11,20 @@ import os
 from langchain_groq import ChatGroq
 ## Load Groq API Key
 ## Groq API key use to call open source llm model
-import openai
-groq_api_key=os.getenv("GROQ_API_KEY")
-print(groq_api_key)
+##import openai
+##groq_api_key=os.getenv("GROQ_API_KEY")
+##print(groq_api_key)
+
+## Once we deploy this app in streamlit cloud, the environment variables(.env) can be stored as secrets section of streamlit.
+## Access the secret from streamlit cloud
+## st.secrets["GROQ_API_KEY"]
+
 
 api_wrapper_wiki=WikipediaAPIWrapper(top_k_result=1, doc_content_chars_max=250) ## top_k_result=1-> return only the top 1 most relevant result
                                                                                 ## doc_content_chars_max -> length of the returned content
 wiki=WikipediaQueryRun(api_wrapper=api_wrapper_wiki)
 
-## Used the in-build tool of Arxiv, create wrapper and then tool on top of wrapper
+## Used the in-build tool of Arxiv, create wrapper and then tool on top of wrapper. This is for research paper
 api_wrapper_arxiv=ArxivAPIWrapper(top_k_result=1, doc_content_chars_max=250)
 arxiv=ArxivQueryRun(api_wrapper=api_wrapper_arxiv)
 
