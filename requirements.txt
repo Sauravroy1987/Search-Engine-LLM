@@ -1,0 +1,43 @@
+langchain
+ipykernel
+python-dotenv ## used to load '.env' properties in project
+langchain_community
+pypdf
+bs4
+arxiv
+pymupdf
+wikipedia
+langchain-text-splitters
+langchain-openai
+sentence_transformers
+langchain_huggingface
+faiss-cpu
+langchain_chroma
+langchain-openai
+beautifulsoup4
+streamlit
+langchain_groq
+langchain_core
+fastapi
+uvicorn
+langserve
+sse_starlette
+transformers
+arxiv
+wikipedia
+duckduckgo-search
+mysql-connector-python
+SQLAlchemy
+pymysql
+validators==0.28.1 ## Validate website url
+youtube-transcript-api ## library to access youtube videos
+pytube
+unstructured
+numexpr
+huggingface_hub
+cassio
+datasets
+openai 
+tiktoken
+PyPDF2
+gradio
